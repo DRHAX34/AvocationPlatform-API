@@ -1,0 +1,19 @@
+﻿CREATE TABLE [dbo].[Openings] (
+    [Id]          UNIQUEIDENTIFIER NOT NULL,
+    [ClientId]    UNIQUEIDENTIFIER NOT NULL,
+    [Title]       VARCHAR (MAX) NOT NULL,
+    [Description] VARCHAR (MAX) NULL,
+    [SYS_STATUS] VARCHAR(5) NOT NULL,
+    [SYS_CREATE_DATE] DATETIME  NOT NULL,
+    [SYS_CREATE_USER_ID] VARCHAR(100) NOT NULL,
+    [SYS_MODIFY_DATE] DATETIME  NOT NULL,
+    [SYS_MODIFY_USER_ID] VARCHAR(100) NOT NULL,
+    CONSTRAINT [PK_Openings] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_Openings_Clients_ClientId] FOREIGN KEY ([ClientId]) REFERENCES [dbo].[Clients] ([Id]) ON DELETE CASCADE
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_Openings_ClienteId]
+    ON [dbo].[Openings]([ClientId] ASC);
+
