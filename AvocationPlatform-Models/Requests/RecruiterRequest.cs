@@ -7,6 +7,10 @@ namespace AvocationPlatform_Models.Requests
 {
     public class RecruiterRequest : RequestBase
     {
-        public RecruiterModel Recrutier { get; set; }
+        public RecruiterModel Recruiter { get; set; } = new RecruiterModel();
+        public Guid? CandidateId { get; set; } = null;
+        public Guid? ClientId { get; set; } = null;
+        public Guid? RoomId { get; set; } = null;
+        public Guid? OpeningId { get; set; } = null;
     }
 }

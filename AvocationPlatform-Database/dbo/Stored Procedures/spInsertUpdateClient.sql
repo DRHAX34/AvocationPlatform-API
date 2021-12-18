@@ -9,20 +9,14 @@
 	@Phone VARCHAR(40) = NULL,
 	@Email VARCHAR(320) = NULL,
 	@SysStatus VARCHAR(5) = 'O',
-	@UserId UNIQUEIDENTIFIER = NULL,
 	@Username VARCHAR(100) = NULL
 AS
 BEGIN
 	DECLARE @CurrentDate DATETIME = GETUTCDATE();
 
-	IF(@Username IS NULL AND @UserId IS NULL)
-	BEGIN
-		RETURN -1
-	END
-
 	IF(@Username IS NULL)
 	BEGIN
-		SELECT @Username = [NormalizedUsername] FROM [dbo].[Users] WHERE [Id] = @UserId
+		RETURN -1
 	END
 
 	IF(EXISTS(SELECT * FROM [dbo].[Clients] WHERE [Id] = @ClientId))

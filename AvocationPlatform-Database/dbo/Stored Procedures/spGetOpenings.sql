@@ -3,7 +3,7 @@
 	@ClientId UNIQUEIDENTIFIER = NULL,
 	@RecruiterId UNIQUEIDENTIFIER = NULL,
 	@CandidateId UNIQUEIDENTIFIER = NULL,
-	@WithDeleted BIT = 1
+	@WithDeleted BIT = 0
 AS
 BEGIN
 	SELECT [Id]

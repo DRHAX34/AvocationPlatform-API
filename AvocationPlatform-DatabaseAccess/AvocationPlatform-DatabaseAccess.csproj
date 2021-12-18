@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>AvocationPlatform_DatabaseAccess</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Helper\SqlHelper.cs~RF177a6f.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AvocationPlatform-Models\AvocationPlatform-Models.csproj" />
+  </ItemGroup>
+
+</Project>

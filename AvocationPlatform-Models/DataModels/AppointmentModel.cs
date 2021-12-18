@@ -12,6 +12,7 @@ namespace AvocationPlatform_Models.DataModels
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public Guid? OpeningId { get; set; }
+        public Guid? ClientId { get; set; }
         public int Stage { get; set; }
         public string SysSingleUserToken { get; set; }
     }

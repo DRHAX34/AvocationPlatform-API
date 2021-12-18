@@ -9,5 +9,6 @@ namespace AvocationPlatform_Models.Requests
     {
         public string UserId { get; set; }
         public Channel Channel { get; set; }
+        public bool WithDeleted { get; set; } = false;
     }
 }

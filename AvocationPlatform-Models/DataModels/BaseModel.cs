@@ -8,7 +8,7 @@ namespace AvocationPlatform_Models.DataModels
     {
         public Guid? Id { get; set; }
 
-        public string SysStatus { get; set; }
+        public string SysStatus { get; set; } = Constants.SysStatus.Enabled;
         public DateTime SysCreateDate { get; set; }
         public string SysCreateUser { get; set; }
         public DateTime SysModifyDate { get; set; }

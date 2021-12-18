@@ -4,7 +4,7 @@
 	@RecruiterId UNIQUEIDENTIFIER = NULL,
 	@CandidateId UNIQUEIDENTIFIER = NULL,
 	@RoomId UNIQUEIDENTIFIER = NULL,
-	@WithDeleted BIT = 1
+	@WithDeleted BIT = 0
 AS
 BEGIN
 	SELECT [Id]

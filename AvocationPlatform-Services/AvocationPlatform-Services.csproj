@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>AvocationPlatform_Services</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AvocationPlatform-DatabaseAccess\AvocationPlatform-DatabaseAccess.csproj" />
+    <ProjectReference Include="..\AvocationPlatform-Models\AvocationPlatform-Models.csproj" />
+  </ItemGroup>
+
+</Project>

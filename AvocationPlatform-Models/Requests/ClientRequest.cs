@@ -1,18 +1,16 @@
-﻿using System;
+﻿using AvocationPlatform_Models.DataModels;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace AvocationPlatform_Models.Requests
 {
-    public class ClientRequest
+    public class ClientRequest : RequestBase
     {
-        public string Name { get; set; }
-        public string VAT { get; set; }
-        public string PictureUI { get; set; }
-        public string Address { get; set; }
-        public string ZipCode { get; set; }
-        public string City { get; set; }
-        public string Phone { get; set; }
-        public string Email { get; set; }
+        public ClientModel Client { get; set; } = new ClientModel();
+        public Guid? RecruiterId { get; set; } = null;
+        public Guid? RoomId { get; set; } = null;
+        public Guid? OpeningId { get; set; } = null;
+        public Guid? CandidateId { get; set; } = null;
     }
 }

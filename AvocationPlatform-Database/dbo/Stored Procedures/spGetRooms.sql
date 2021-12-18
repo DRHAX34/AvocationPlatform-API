@@ -4,7 +4,7 @@
 	@CandidateId UNIQUEIDENTIFIER = NULL,
 	@OpeningId UNIQUEIDENTIFIER = NULL,
 	@ClientId UNIQUEIDENTIFIER = NULL,
-	@WithDeleted BIT = 1
+	@WithDeleted BIT = 0
 AS
 BEGIN
 
