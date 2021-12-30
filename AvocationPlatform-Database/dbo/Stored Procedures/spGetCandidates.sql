@@ -11,6 +11,7 @@ BEGIN
 		,[Name]
 		,[Surname]
 		,[PreferredName]
+		,[ProfilePictureUri]
 		,[Phone]
 		,[Email]
 		,[Company]

@@ -15,6 +15,7 @@ BEGIN
 		,[City]
 		,[Phone]
 		,[Email]
+		,[PictureUri]
 		,[SYS_STATUS] as 'SysStatus'
 		,[SYS_CREATE_DATE] as 'SysCreateDate'
 		,[SYS_CREATE_USER_ID] as 'SysCreateUserId'

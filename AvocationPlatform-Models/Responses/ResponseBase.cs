@@ -7,6 +7,6 @@ namespace AvocationPlatform_Models.ResponseModels
 {
     public class ResponseBase
     {
-        public ErrorModel Error { get; set; }
+        public ErrorModel Error { get; set; } = new ErrorModel();
     }
 }

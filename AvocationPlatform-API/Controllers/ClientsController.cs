@@ -68,7 +68,7 @@ namespace AvocationPlatform_API.Controllers
         }
 
         [HttpGet("Picture")]
-        public IActionResult GetClientPicture([FromQuery]Guid ClientId)
+        public IActionResult GetClientPicture([FromQuery]Guid Id)
         {
             try
             {
@@ -76,7 +76,7 @@ namespace AvocationPlatform_API.Controllers
                 {
                     Client = new ClientModel()
                     {
-                        Id = ClientId
+                        Id = Id
                     }
                 })?.Clients?.FirstOrDefault();
 
@@ -95,7 +95,7 @@ namespace AvocationPlatform_API.Controllers
         [HttpPut("Picture")]
         [Consumes("multipart/form-data")]
         [RequestFormLimits(MultipartBodyLengthLimit = 500000000)]
-        public IActionResult SetClientPicture([FromQuery]Guid ClientId, [FromForm]IFormFile ClientPicture)
+        public IActionResult SetClientPicture([FromQuery]Guid Id, [FromForm]IFormFile ClientPicture)
         {
             var rs = new ClientResponse();
             try
@@ -104,12 +104,14 @@ namespace AvocationPlatform_API.Controllers
                 {
                     Client = new ClientModel()
                     {
-                        Id = ClientId
+                        Id = Id
                     }
                 })?.Clients?.FirstOrDefault();
 
                 //TODO: Change this to an app setting
-                var pictureFolder = Path.Combine(Path.GetTempPath(), "/AvocationPictures");
+                var pictureFolder = Path.Combine("C:\\AvocationStorage", "AvocationPictures");
+
+                Directory.CreateDirectory(pictureFolder);
                 
                 if(client == null)
                 {
@@ -137,10 +139,11 @@ namespace AvocationPlatform_API.Controllers
 
                 rs = _clientService.InsertUpdateClient(new ClientRequest()
                 {
-                    Client = client
+                    Client = client,
+                    UserId = "Teste" //TODO: Add authentication
                 });
 
-                if(rs?.Clients?.FirstOrDefault() != null)
+                if(rs?.Clients?.FirstOrDefault().Id != null)
                     rs.Clients.FirstOrDefault().PictureUri = "HAS_IMAGE";
 
                 return Ok(rs);
