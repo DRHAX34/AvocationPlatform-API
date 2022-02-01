@@ -2,7 +2,7 @@
 	@RecruiterId UNIQUEIDENTIFIER = NULL,
 	@Name VARCHAR(MAX),
 	@SysStatus VARCHAR(5) = 'O',
-	@Username VARCHAR(100) = NULL
+	@Username VARCHAR(150) = NULL
 AS
 BEGIN
 	DECLARE @CurrentDate DATETIME = GETUTCDATE();

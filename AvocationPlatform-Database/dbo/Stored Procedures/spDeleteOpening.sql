@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [dbo].[spDeleteOpening]
 	@OpeningId UNIQUEIDENTIFIER,
-	@Username VARCHAR(100) = NULL
+	@Username VARCHAR(150)
 AS
 BEGIN
 	DECLARE @CurrentDate DATETIME = GETUTCDATE();

@@ -85,7 +85,7 @@ namespace AvocationPlatform_API.Controllers
                     {
                         Id = Id
                     },
-                    UserId = "TESTE" //TODO: Implement users
+                    Username = "TESTE" //TODO: Implement users
                 };
 
                 if (_roomService.DeleteRoom(rq).Successfull)

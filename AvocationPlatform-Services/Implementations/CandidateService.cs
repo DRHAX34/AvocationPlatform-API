@@ -37,7 +37,7 @@ namespace AvocationPlatform_Services.Implementations
             {
                 Candidates = new List<CandidateModel>()
                 {
-                    _candidateManager.InsertUpdateCandidate(rq.Candidate, rq.UserId)
+                    _candidateManager.InsertUpdateCandidate(rq.Candidate, rq.Username)
                 }
             };
         }
@@ -46,7 +46,7 @@ namespace AvocationPlatform_Services.Implementations
         {
             return new OperationResponse()
             {
-                Successfull = _candidateManager.DeleteCandidate(rq.Candidate.Id, rq.UserId)
+                Successfull = _candidateManager.DeleteCandidate(rq.Candidate.Id, rq.Username)
             };
         }
         #endregion

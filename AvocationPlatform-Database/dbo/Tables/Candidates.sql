@@ -11,6 +11,7 @@
     [Address]       VARCHAR (MAX) NULL,
     [ZipCode]       VARCHAR (MAX) NULL,
     [City]          VARCHAR (MAX) NULL,
+    [UserId]        UNIQUEIDENTIFIER NULL,
     [SYS_STATUS] VARCHAR(5) NOT NULL,
     [SYS_CREATE_DATE] DATETIME  NOT NULL,
     [SYS_CREATE_USER_ID] VARCHAR(100) NOT NULL,

@@ -19,9 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvocationPlatform-DatabaseA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Security", "02.Security", "{A6F02E43-34B9-4A84-90A3-258EE2372691}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvocationPlatform-Security", "..\AvocationPlatform-Security\AvocationPlatform-Security.csproj", "{D34603F5-CD11-43C2-BD0F-FD8E2F423C48}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvocationPlatform-Services", "..\AvocationPlatform-Services\AvocationPlatform-Services.csproj", "{39BB943D-9D9B-4166-AB1F-9B094169E6D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvocationPlatform-Services", "..\AvocationPlatform-Services\AvocationPlatform-Services.csproj", "{39BB943D-9D9B-4166-AB1F-9B094169E6D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +45,6 @@ Global
 		{7379FF11-0DED-4ABB-AB71-5C529287D9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7379FF11-0DED-4ABB-AB71-5C529287D9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7379FF11-0DED-4ABB-AB71-5C529287D9CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D34603F5-CD11-43C2-BD0F-FD8E2F423C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D34603F5-CD11-43C2-BD0F-FD8E2F423C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D34603F5-CD11-43C2-BD0F-FD8E2F423C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D34603F5-CD11-43C2-BD0F-FD8E2F423C48}.Release|Any CPU.Build.0 = Release|Any CPU
 		{39BB943D-9D9B-4166-AB1F-9B094169E6D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{39BB943D-9D9B-4166-AB1F-9B094169E6D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39BB943D-9D9B-4166-AB1F-9B094169E6D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -64,7 +58,6 @@ Global
 		{985FCC84-68DB-42C5-8412-07F9E1C0AA21} = {9ADE3B14-B778-4579-80A8-5E12589BE4F4}
 		{1A4ACD7E-56C1-4079-AA0D-7AFC102EBE4E} = {98F541BB-CB5D-41FF-9FE2-8F484B0123D7}
 		{7379FF11-0DED-4ABB-AB71-5C529287D9CF} = {9ADE3B14-B778-4579-80A8-5E12589BE4F4}
-		{D34603F5-CD11-43C2-BD0F-FD8E2F423C48} = {A6F02E43-34B9-4A84-90A3-258EE2372691}
 		{39BB943D-9D9B-4166-AB1F-9B094169E6D3} = {98F541BB-CB5D-41FF-9FE2-8F484B0123D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

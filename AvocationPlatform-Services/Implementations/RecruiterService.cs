@@ -38,7 +38,7 @@ namespace AvocationPlatform_Services.Implementations
             {
                 Recruiters = new List<RecruiterModel>()
                 {
-                    _recruiterManager.InsertUpdateRecruiter(rq.Recruiter, rq.UserId)
+                    _recruiterManager.InsertUpdateRecruiter(rq.Recruiter, rq.Username)
                 }
             };
         }
@@ -46,7 +46,7 @@ namespace AvocationPlatform_Services.Implementations
         {
             return new OperationResponse()
             {
-                Successfull = _recruiterManager.DeleteRecruiter(rq.Recruiter.Id, rq.UserId)
+                Successfull = _recruiterManager.DeleteRecruiter(rq.Recruiter.Id, rq.Username)
             };
         }
         #endregion

@@ -8,7 +8,7 @@
 	@OpeningId UNIQUEIDENTIFIER = NULL,
 	@Stage INT = 0,
 	@SysStatus VARCHAR(5) = 'O',
-	@Username VARCHAR(100) = NULL
+	@Username VARCHAR(150) = NULL
 AS
 BEGIN
 	DECLARE @CurrentDate DATETIME = GETUTCDATE();

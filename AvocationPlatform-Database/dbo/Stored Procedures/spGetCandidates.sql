@@ -4,6 +4,7 @@
 	@ClientId UNIQUEIDENTIFIER = NULL,
 	@RecruiterId UNIQUEIDENTIFIER = NULL,
 	@RoomId UNIQUEIDENTIFIER = NULL,
+	@UserId UNIQUEIDENTIFIER = NULL,
 	@WithDeleted BIT = 0
 AS
 BEGIN
@@ -34,6 +35,8 @@ BEGIN
 		(@RecruiterId IS NULL OR [Id] IN (SELECT [CandidateId] FROM [dbo].[Appointments] WHERE [RecruiterId] = @RecruiterId AND ([SYS_STATUS] IN ('O', (SELECT 'X' WHERE @WithDeleted = 1)))))
 		AND
 		(@RoomId IS NULL OR [Id] IN (SELECT [CandidateId] FROM [dbo].[Appointments] WHERE [RoomId] = @RoomId AND ([SYS_STATUS] IN ('O', (SELECT 'X' WHERE @WithDeleted = 1)))))
+		AND
+		(@UserId IS NULL OR [Id] IN (SELECT [Id] FROM [dbo].[Users] WHERE [Id] = @UserId AND ([SYS_STATUS] IN ('O', (SELECT 'X' WHERE @WithDeleted = 1)))))
 		AND
 		([SYS_STATUS] IN ('O', (SELECT 'X' WHERE @WithDeleted = 1)))
 END

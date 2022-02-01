@@ -10,8 +10,8 @@ namespace AvocationPlatform_Models.DataModels
 
         public string SysStatus { get; set; } = Constants.SysStatus.Enabled;
         public DateTime SysCreateDate { get; set; }
-        public string SysCreateUser { get; set; }
+        public string SysCreateUserId { get; set; }
         public DateTime SysModifyDate { get; set; }
-        public string SysModifyUser { get; set; }
+        public string SysModifyUserId { get; set; }
     }
 }

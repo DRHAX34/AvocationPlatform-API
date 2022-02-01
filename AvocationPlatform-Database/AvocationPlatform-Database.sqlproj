@@ -83,5 +83,33 @@
     <Build Include="dbo\Stored Procedures\spDeleteOpening.sql" />
     <Build Include="dbo\Stored Procedures\spDeleteRecruiter.sql" />
     <Build Include="dbo\Stored Procedures\spDeleteRoom.sql" />
+    <Build Include="dbo\Tables\Users.sql" />
+    <Build Include="dbo\Tables\TokenHistory.sql" />
+    <Build Include="dbo\Tables\Claims.sql" />
+    <Build Include="dbo\Tables\Settings.sql" />
+    <Build Include="dbo\Tables\Roles.sql" />
+    <Build Include="dbo\Stored Procedures\spGetUsers.sql" />
+    <Build Include="dbo\Stored Procedures\spGetRoles.sql" />
+    <Build Include="dbo\Stored Procedures\spGetClaims.sql" />
+    <Build Include="dbo\Stored Procedures\spGetSettings.sql" />
+    <Build Include="dbo\Stored Procedures\spGetTokenHistory.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUpdateClaim.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUpdateRole.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUpdateTokenHistory.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUpdateSetting.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUpdateUser.sql" />
+    <Build Include="dbo\Stored Procedures\spDeleteClaim.sql" />
+    <Build Include="dbo\Stored Procedures\spDeleteRole.sql" />
+    <Build Include="dbo\Stored Procedures\spDeleteSetting.sql" />
+    <Build Include="dbo\Stored Procedures\spDeleteTokenHistory.sql" />
+    <Build Include="dbo\Stored Procedures\spDeleteUser.sql" />
+    <Build Include="dbo\Stored Procedures\spInvalidateToken.sql" />
+    <Build Include="dbo\Stored Procedures\spValidateToken.sql" />
+    <Build Include="dbo\Tables\Users_Roles.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertRoleUser.sql" />
+    <Build Include="dbo\Stored Procedures\spDeleteUserRole.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="AvocationPlatform-Database.refactorlog" />
   </ItemGroup>
 </Project>

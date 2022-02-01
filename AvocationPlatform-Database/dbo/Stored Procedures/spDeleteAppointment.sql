@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [dbo].[spDeleteAppointment]
-	@AppointmentId UNIQUEIDENTIFIER = NULL,
-	@Username VARCHAR(100) = NULL
+	@AppointmentId UNIQUEIDENTIFIER,
+	@Username VARCHAR(150)
 AS
 BEGIN
 	DECLARE @CurrentDate DATETIME = GETUTCDATE();

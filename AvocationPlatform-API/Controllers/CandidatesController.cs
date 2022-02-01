@@ -143,7 +143,7 @@ namespace AvocationPlatform_API.Controllers
                 rs = _candidateService.InsertUpdateCandidate(new CandidateRequest()
                 {
                     Candidate = candidate,
-                    UserId = "Teste" //TODO: Add authentication
+                    Username = "Teste" //TODO: Add authentication
                 });
 
                 if (rs?.Candidates?.FirstOrDefault().Id != null)

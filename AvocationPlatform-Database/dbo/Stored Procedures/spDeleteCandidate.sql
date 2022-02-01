@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [dbo].[spDeleteCandidate]
 	@CandidateId UNIQUEIDENTIFIER,
-	@Username VARCHAR(100) = NULL
+	@Username VARCHAR(150)
 AS
 BEGIN
 	DECLARE @CurrentDate DATETIME = GETUTCDATE();

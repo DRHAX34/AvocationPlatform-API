@@ -11,8 +11,9 @@
 	@Address VARCHAR(MAX) = NULL,
 	@ZipCode VARCHAR(MAX) = NULL,
 	@City VARCHAR(MAX) = NULL,
+	@UserId UNIQUEIDENTIFiER = NULL,
 	@SysStatus VARCHAR(5) = 'O',
-	@Username VARCHAR(100) = NULL
+	@Username VARCHAR(150) = NULL
 AS
 BEGIN
 	DECLARE @CurrentDate DATETIME = GETUTCDATE();
@@ -36,6 +37,7 @@ BEGIN
 			[Address] = @Address,
 			[ZipCode] = @ZipCode,
 			[City] = @City,
+			[UserId] = @UserId,
 			[SYS_STATUS] = @SysStatus,
 			[SYS_MODIFY_DATE] = @CurrentDate,
 			[SYS_MODIFY_USER_ID] = @Username
@@ -57,6 +59,7 @@ BEGIN
 			,[Address]
 			,[ZipCode]
 			,[City]
+			,[UserId]
 			,[SYS_STATUS]
 			,[SYS_CREATE_DATE]
 			,[SYS_CREATE_USER_ID]
@@ -74,6 +77,7 @@ BEGIN
 			,@Address
 			,@ZipCode
 			,@City
+			,@UserId
 			,@SysStatus
 			,@CurrentDate
 			,@Username

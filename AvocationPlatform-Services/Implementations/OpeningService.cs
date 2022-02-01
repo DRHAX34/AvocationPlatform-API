@@ -38,7 +38,7 @@ namespace AvocationPlatform_Services.Implementations
             {
                 Openings = new List<OpeningModel>()
                 {
-                    _openingManager.InsertUpdateOpening(rq.Opening, rq.UserId)
+                    _openingManager.InsertUpdateOpening(rq.Opening, rq.Username)
                 }
             };
         }
@@ -46,7 +46,7 @@ namespace AvocationPlatform_Services.Implementations
         {
             return new OperationResponse()
             {
-                Successfull = _openingManager.DeleteOpening(rq.Opening.Id, rq.UserId)
+                Successfull = _openingManager.DeleteOpening(rq.Opening.Id, rq.Username)
             };
         }
         #endregion

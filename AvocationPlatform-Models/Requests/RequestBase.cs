@@ -7,7 +7,7 @@ namespace AvocationPlatform_Models.Requests
 {
     public class RequestBase
     {
-        public string UserId { get; set; }
+        public string Username { get; set; }
         public Channel Channel { get; set; }
         public bool WithDeleted { get; set; } = false;
     }

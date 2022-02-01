@@ -38,7 +38,7 @@ namespace AvocationPlatform_Services.Implementations
             {
                 Appointments = new List<AppointmentModel>
                 {
-                    _appointmentsManager.InsertUpdateAppointment(rq.Appointment, rq.UserId)
+                    _appointmentsManager.InsertUpdateAppointment(rq.Appointment, rq.Username)
                 }
             };
         }
@@ -47,7 +47,7 @@ namespace AvocationPlatform_Services.Implementations
         {
             return new OperationResponse()
             {
-                Successfull = _appointmentsManager.DeleteAppointment(rq.Appointment.Id, rq.UserId)
+                Successfull = _appointmentsManager.DeleteAppointment(rq.Appointment.Id, rq.Username)
             };
         }
         #endregion

@@ -38,7 +38,7 @@ namespace AvocationPlatform_Services.Implementations
             {
                 Rooms = new List<RoomModel>
                 {
-                    _roomManager.InsertUpdateRoom(rq.Room, rq.UserId)
+                    _roomManager.InsertUpdateRoom(rq.Room, rq.Username)
                 }
             };
         }
@@ -47,7 +47,7 @@ namespace AvocationPlatform_Services.Implementations
         {
             return new OperationResponse()
             {
-                Successfull = _roomManager.DeleteRoom(rq.Room.Id, rq.UserId)
+                Successfull = _roomManager.DeleteRoom(rq.Room.Id, rq.Username)
             };
         }
         #endregion

@@ -140,7 +140,7 @@ namespace AvocationPlatform_API.Controllers
                 rs = _clientService.InsertUpdateClient(new ClientRequest()
                 {
                     Client = client,
-                    UserId = "Teste" //TODO: Add authentication
+                    Username = "Teste" //TODO: Add authentication
                 });
 
                 if(rs?.Clients?.FirstOrDefault().Id != null)

@@ -38,7 +38,7 @@ namespace AvocationPlatform_Services.Implementations
             {
                 Clients = new List<ClientModel>
                 {
-                    _clientManager.InsertUpdateClient(rq.Client, rq.UserId)
+                    _clientManager.InsertUpdateClient(rq.Client, rq.Username)
                 }
             };
         }
@@ -47,7 +47,7 @@ namespace AvocationPlatform_Services.Implementations
         {
             return new OperationResponse()
             {
-                Successfull = _clientManager.DeleteClient(rq.Client.Id, rq.UserId)
+                Successfull = _clientManager.DeleteClient(rq.Client.Id, rq.Username)
             };
         }
         #endregion
